@@ -1,4 +1,8 @@
-#Matrix module class
+"""This module provides a basic Matrix data type with all associated 
+operations (+, -, *, and **). Matrices are represented as 2-dimensional 
+lists of floats or integers. Other methods include: construct(),copy(),
+edit(), ref(), rref(), transpose()
+"""
 class Matrix:
 
     #Matrix Constructor initializes empty 0 matrix
@@ -275,10 +279,3 @@ class Matrix:
                     stringv+=str(self.matrix[x][y])+' '
             stringv+=']\n'
         return(stringv)
-
-def main():
-    print('Welcome to the Python3 Matrix Module. This module may:')
-    print('Add/Subtract/Multiply Matrices')
-    
-if __name__ == '__main__':
-    main()
